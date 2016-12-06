@@ -6,7 +6,7 @@ const SelectedNokemon = []
 const defaultPosition = [40.7, -96.6]
 const map = L.map('map').setView(defaultPosition, 12)
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map)
 
