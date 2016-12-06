@@ -18,7 +18,7 @@ legend.onAdd = function legendAdd (map) {
   return this._div
 }
 legend.update = function legendUpate () {
-  this._div.innerHTML = SelectedNokemon.sort((a, b) => a - b).map(nokemon => `<img src="/img/pokemon/${nokemon}.png" />`).join(' ')
+  this._div.innerHTML = SelectedNokemon.sort((a, b) => a - b).map(nokemon => `<img src="img/pokemon/${nokemon}.png" />`).join(' ')
 }
 legend.addTo(map)
 
@@ -49,7 +49,7 @@ function addNokemon () {
     const nokemon = Math.floor(Math.random() * 152)
     L.marker(nextLocation.geometry.coordinates.reverse(), {
       icon: L.icon({
-        iconUrl: `/img/pokemon/${nokemon}.png`
+        iconUrl: `img/pokemon/${nokemon}.png`
       })
     })
     .addTo(map)
